@@ -16,6 +16,7 @@
 		BA89F3FB2444A4B300B6F63A /* LibTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA89F3FA2444A4B300B6F63A /* LibTableViewController.swift */; };
 		BAF0CB4E2445CE8B00300F5F /* EmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF0CB4D2445CE8B00300F5F /* EmTableViewCell.swift */; };
 		BAF0CB502445E38500300F5F /* emojmod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF0CB4F2445E38500300F5F /* emojmod.swift */; };
+		BAF1178C24485B4B001ADCF1 /* NewLabelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1178B24485B4B001ADCF1 /* NewLabelTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BA89F3FA2444A4B300B6F63A /* LibTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibTableViewController.swift; sourceTree = "<group>"; };
 		BAF0CB4D2445CE8B00300F5F /* EmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmTableViewCell.swift; sourceTree = "<group>"; };
 		BAF0CB4F2445E38500300F5F /* emojmod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emojmod.swift; sourceTree = "<group>"; };
+		BAF1178B24485B4B001ADCF1 /* NewLabelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLabelTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				BA89F3EA24449DA400B6F63A /* ViewController.swift */,
 				BA89F3FA2444A4B300B6F63A /* LibTableViewController.swift */,
 				BAF0CB4F2445E38500300F5F /* emojmod.swift */,
+				BAF1178B24485B4B001ADCF1 /* NewLabelTableViewController.swift */,
 				BA89F3EC24449DA400B6F63A /* Main.storyboard */,
 				BA89F3EF24449DA500B6F63A /* Assets.xcassets */,
 				BA89F3F124449DA500B6F63A /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				BA89F3FB2444A4B300B6F63A /* LibTableViewController.swift in Sources */,
 				BA89F3E724449DA400B6F63A /* AppDelegate.swift in Sources */,
 				BAF0CB4E2445CE8B00300F5F /* EmTableViewCell.swift in Sources */,
+				BAF1178C24485B4B001ADCF1 /* NewLabelTableViewController.swift in Sources */,
 				BA89F3E924449DA400B6F63A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
