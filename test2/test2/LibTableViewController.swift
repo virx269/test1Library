@@ -35,10 +35,31 @@ class LibTableViewController: UITableViewController {
         guard segue.identifier == "saveSegue" else {return}
         let sourceVC = segue.source as! NewLabelTableViewController
         let emoji = sourceVC.insideEmoji
-        let newIndexPath =  IndexPath(row: objects.count, section: 0)
-        objects.append(emoji)
         
-        tableView.insertRows(at: [newIndexPath], with: .fade)
+        // логика редактирования или добавления нового объекта
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            objects[selectedIndexPath.row] = emoji
+            tableView.reloadRows(at: [selectedIndexPath], with: .fade)
+        } else {
+            let newIndexPath =  IndexPath(row: objects.count, section: 0)
+            objects.append(emoji)
+            tableView.insertRows(at: [newIndexPath], with: .fade)
+            
+        }
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "editEmoji" else { return   }
+        let indexPath = tableView.indexPathForSelectedRow!
+        let emoji = objects[indexPath.row]
+        let navigaionVC = segue.destination as! UINavigationController
+        let newEmojiVC = navigaionVC.topViewController as! NewLabelTableViewController
+        newEmojiVC.insideEmoji = emoji
+        newEmojiVC.title = "Edit"
+    
     }
 
     // MARK: - Table view data source

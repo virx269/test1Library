@@ -21,6 +21,7 @@ class NewLabelTableViewController: UITableViewController {
     //метод проверки при загрузки таблицы
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI() 
         updateSaveButton()
     }
     
@@ -31,10 +32,14 @@ class NewLabelTableViewController: UITableViewController {
         let  Label3Text = Label3TextField.text ?? ""
         
         saveButton.isEnabled = !Label1Text.isEmpty && !Label2Text.isEmpty && !Label3Text.isEmpty
-        
-        
     }
     
+    private func updateUI() {
+        Label1TextField.text = insideEmoji.emoji
+        Label2TextField.text = insideEmoji.name
+        Label3TextField.text = insideEmoji.description
+        
+    }
     //метод проверки функции при изменении текста одном из трех textField'ов
     @IBAction func textChange(_ sender: Any) {
         updateSaveButton()
