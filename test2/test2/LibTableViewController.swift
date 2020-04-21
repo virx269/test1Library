@@ -36,23 +36,20 @@ class LibTableViewController: UITableViewController {
         let sourceVC = segue.source as! NewLabelTableViewController
         let emoji = sourceVC.insideEmoji
         
-        // логика редактирования или добавления нового объекта
-        if let selectedIndexPath = tableView.indexPathForSelectedRow {
-            objects[selectedIndexPath.row] = emoji
-            tableView.reloadRows(at: [selectedIndexPath], with: .fade)
-        } else {
+// логика редактирования или добавления нового объекта
+       if let selectedIndexPath = tableView.indexPathForSelectedRow {
+        objects[selectedIndexPath.row] = emoji
+        tableView.reloadRows(at: [selectedIndexPath], with: .fade)
+      } else {
             let newIndexPath =  IndexPath(row: objects.count, section: 0)
             objects.append(emoji)
             tableView.insertRows(at: [newIndexPath], with: .fade)
-            
         }
-        
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        guard segue.identifier == "editEmoji" else { return   }
+        guard segue.identifier == "editE" else { return   }
         let indexPath = tableView.indexPathForSelectedRow!
         let emoji = objects[indexPath.row]
         let navigaionVC = segue.destination as! UINavigationController

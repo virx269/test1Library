@@ -62,7 +62,7 @@
                                     <outlet property="lb1" destination="0lv-FC-eLB" id="jvH-0S-1l7"/>
                                     <outlet property="lb2" destination="VB9-ND-QsB" id="oD6-Xd-cT8"/>
                                     <outlet property="lb3" destination="OPM-md-6jm" id="aQS-Lf-ehw"/>
-                                    <segue destination="epU-22-YPe" kind="show" identifier="emojiEdit" id="CYL-wQ-NFA"/>
+                                    <segue destination="epU-22-YPe" kind="show" identifier="editE" id="BG0-sc-USL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -245,6 +245,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CYL-wQ-NFA"/>
+        <segue reference="BG0-sc-USL"/>
     </inferredMetricsTieBreakers>
 </document>
