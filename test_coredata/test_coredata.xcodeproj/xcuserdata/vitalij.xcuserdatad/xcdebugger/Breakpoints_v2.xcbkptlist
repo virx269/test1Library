@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "08CCC7C6-4049-41FD-806A-DA97CA0E4992"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CBD1F61-4F01-49F5-A08B-038F96B481DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_coredata/TableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "TableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7CBD1F61-4F01-49F5-A08B-038F96B481DD - 42c9cdf64a8f49ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_coredata.TableViewController.tasks.getter : Swift.Array&lt;test_coredata.Task&gt;"
+                  moduleName = "test_coredata"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitalij/Documents/swift/moblib_swift/test_coredata/test_coredata/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "7CBD1F61-4F01-49F5-A08B-038F96B481DD - 406a7c74edc57dfb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_coredata.TableViewController.tasks.setter : Swift.Array&lt;test_coredata.Task&gt;"
+                  moduleName = "test_coredata"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitalij/Documents/swift/moblib_swift/test_coredata/test_coredata/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "7CBD1F61-4F01-49F5-A08B-038F96B481DD - 6698bb9ea6c624e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_coredata.TableViewController.tasks.modify : Swift.Array&lt;test_coredata.Task&gt;"
+                  moduleName = "test_coredata"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitalij/Documents/swift/moblib_swift/test_coredata/test_coredata/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "7CBD1F61-4F01-49F5-A08B-038F96B481DD - c2cf4c7d9e28a393"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_coredata.TableViewController.tasks.modify : Swift.Array&lt;test_coredata.Task&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "test_coredata"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitalij/Documents/swift/moblib_swift/test_coredata/test_coredata/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "7CBD1F61-4F01-49F5-A08B-038F96B481DD - db14d66135cbc820"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_coredata.TableViewController.init(style: __C.UITableViewStyle) -&gt; test_coredata.TableViewController"
+                  moduleName = "test_coredata"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitalij/Documents/swift/moblib_swift/test_coredata/test_coredata/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "7CBD1F61-4F01-49F5-A08B-038F96B481DD - 4e12448b318d3e7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_coredata.TableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; test_coredata.TableViewController"
+                  moduleName = "test_coredata"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitalij/Documents/swift/moblib_swift/test_coredata/test_coredata/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "150">
+               </Location>
+               <Location
+                  uuid = "7CBD1F61-4F01-49F5-A08B-038F96B481DD - aa708be052e2363c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_coredata.TableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;test_coredata.TableViewController&gt;"
+                  moduleName = "test_coredata"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitalij/Documents/swift/moblib_swift/test_coredata/test_coredata/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "106">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BAFAE4EE-EEE4-48C1-B5A2-7E2BF4FB95B7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_coredata/TableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "saveTask(withTitle:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
