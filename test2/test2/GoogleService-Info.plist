@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>12280813873-054h7b8l5ouqpllovo6vastc9gvd482b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.12280813873-054h7b8l5ouqpllovo6vastc9gvd482b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDmMeTXuhhr50N3jb66HToryQRhGG0P8p8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>12280813873</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ru.test.test</string>
+	<key>PROJECT_ID</key>
+	<string>todofire-873f8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>todofire-873f8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:12280813873:ios:910019ee0e784dd5</string>
+	<key>DATABASE_URL</key>
+	<string>https://todofire-873f8.firebaseio.com</string>
+</dict>
+</plist>

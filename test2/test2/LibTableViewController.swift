@@ -10,11 +10,13 @@ import UIKit
 
 class LibTableViewController: UITableViewController {
     
-    var objects = [
-        emoji(emoji: "🩰", name: "kick1", description: "about", like: false),
-        emoji(emoji: "🎟", name: "kick2", description: "about2", like: false),
-        emoji(emoji: "🚓", name: "kick3", description: "about3", like: true)
-    ]
+   // var objects: [Model] = [
+    //    emoji(emoji: "🩰", name: "kick1", description: "about", like: false),
+    //    emoji(emoji: "🎟", name: "kick2", description: "about2", like: false),
+    //    emoji(emoji: "🚓", name: "kick3", description: "about3", like: true)
+    //]
+    
+    var objects: [Model] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,11 +40,11 @@ class LibTableViewController: UITableViewController {
         
 // логика редактирования или добавления нового объекта
        if let selectedIndexPath = tableView.indexPathForSelectedRow {
-        objects[selectedIndexPath.row] = emoji
+        //objects[selectedIndexPath.row] = emoji
         tableView.reloadRows(at: [selectedIndexPath], with: .fade)
       } else {
             let newIndexPath =  IndexPath(row: objects.count, section: 0)
-            objects.append(emoji)
+          //  objects.append(emoji)
             tableView.insertRows(at: [newIndexPath], with: .fade)
         }
     }
@@ -54,7 +56,7 @@ class LibTableViewController: UITableViewController {
         let emoji = objects[indexPath.row]
         let navigaionVC = segue.destination as! UINavigationController
         let newEmojiVC = navigaionVC.topViewController as! NewLabelTableViewController
-        newEmojiVC.insideEmoji = emoji
+        //newEmojiVC.insideEmoji = emoji
         newEmojiVC.title = "Edit"
     
     }
@@ -75,7 +77,7 @@ class LibTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "emojicell", for: indexPath) as! EmTableViewCell
         let object = objects[indexPath.row]
-        cell.set(object: object)
+       // cell.set(object: object)
         return cell
     }
     
@@ -118,8 +120,58 @@ class LibTableViewController: UITableViewController {
        // action.image = UIImage(systemName: "checkmark.cicle" )
         return action
     }
-    
-
-   
-
 }
+
+//private func saveCell(withTitle lb1: String) {
+//    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//    let context = appDelegate.persis
+//}
+
+
+// MARK: - Core Data stack
+
+var persistentContainer: NSPersistentContainer = {
+        /*
+         The persistent container for the application. This implementation
+         creates and returns a container, having loaded the store for the
+         application to it. This property is optional since there are legitimate
+         error conditions that could cause the creation of the store to fail.
+        */
+        let container = NSPersistentContainer(name: "Model")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                 
+                /*
+                 Typical reasons for an error here include:
+                 * The parent directory does not exist, cannot be created, or disallows writing.
+                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+                 * The device is out of space.
+                 * The store could not be migrated to the current model version.
+                 Check the error message to determine what the actual problem was.
+                 */
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
+
+    // MARK: - Core Data Saving support
+
+    func saveContext () {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
+
+
+
